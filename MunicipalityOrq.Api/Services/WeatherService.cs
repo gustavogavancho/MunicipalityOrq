@@ -16,8 +16,6 @@ public class WeatherService : IWeatherService
     public async ValueTask<OrchDto> GetMunicipaliyDataAsync(int municipalityId)
     {
         var orchData = new OrchDto();
-
-        orchData.Id = municipalityId;
         orchData.GeoData = await GetGeo(municipalityId);
         orchData.WeatherData = await GetWeather(municipalityId);
 
@@ -49,7 +47,7 @@ public class WeatherService : IWeatherService
     {
         try
         {
-            var url = $"https://localhost:5002/{municipalityId}/geo";
+            var url = $"https://localhost:5001/{municipalityId}/geo";
 
             var response = await httpClient.GetAsync(url);
 

@@ -1,6 +1,6 @@
-@MunicipalityOrq.Api_HostAddress = http://localhost:5236
+@MunicipalityOrq.Api_HostAddress = https://localhost:5004
 
-GET {{MunicipalityOrq.Api_HostAddress}}/weatherforecast/
+GET {{MunicipalityOrq.Api_HostAddress}}/45014/geo/meteo
 Accept: application/json
 
 ###

@@ -5,7 +5,6 @@ namespace MunicipalityOrq.Api.Dtos;
 
 public class OrchDto
 {
-    [JsonPropertyName("municipioid")] public int Id { get; set; }
-    [JsonPropertyName("Geografia")] public MunicipalityGeoDto GeoData { get; set; }
-    [JsonPropertyName("Clima")] public MunicipalityWeatherResponse WeatherData { get; set; }
+    [JsonPropertyName("geografia")] public MunicipalityGeoDto GeoData { get; set; }
+    [JsonPropertyName("clima")] public MunicipalityWeatherResponse WeatherData { get; set; }
 }
